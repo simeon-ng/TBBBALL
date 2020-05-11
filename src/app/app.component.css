@@ -6,26 +6,33 @@ mat-sidenav-container {
 
 .header {
     font-size: 2.5vh;
+    margin-left: 5vw;
+}
+
+#button-div {
+    text-align: center;
 }
 
 .menu-button {
     font-size: 2vh;
     margin: 1em;
+    margin-left: 5vw;
 }
 
 .about-button {
     font-size: 2vh;
     margin: 1em;
+    margin-left: auto;
 }
 
-.start-button {
+#start-button {
     font-size: 2vh;
     margin: 1em;
 }
 
-.homepage-text {
+#homepage-text {
     font-size: 5vh;
-    height: 50%;
-    width: 50%;
+    width: 100%;
     margin: 1em;
+    text-align: center;
 }

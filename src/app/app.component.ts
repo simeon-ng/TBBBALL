@@ -17,6 +17,16 @@ export class AppComponent {
     });
   }
 
+  closeWelcome(): void {
+    var welcome = document.getElementById("homepage-text");
+    var buttonDiv = document.getElementById("button-div");
+
+    if (buttonDiv.style.display != "none") {
+      welcome.style.display = "none";
+      buttonDiv.style.display = "none";
+    }
+  }
+
 }
 
 @Component({

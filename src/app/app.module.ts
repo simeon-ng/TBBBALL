@@ -9,10 +9,12 @@ import { MatDialogModule, MatDialog } from '@angular/material/dialog';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PlayerFormComponent } from './player-form/player-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PlayerFormComponent
   ],
   imports: [
     BrowserModule,
