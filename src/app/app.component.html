@@ -1,40 +1,40 @@
 <mat-toolbar color="primary">
   <span class="header">TBBBALL (Text Based Basketball) 🏀</span>
   <button mat-raised-button
-          (click)="openDialog()" 
+          (click)="openDialog()"
           color="accent"
           class="about-button">
-    About
+      About
   </button>
 </mat-toolbar>
 
 <mat-sidenav-container>
   <mat-sidenav #sidenav closed mode="push" autoFocus=false>
-    Begin
+      Begin
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <button mat-fab color="primary" 
-            class="menu-button" 
-            (click)="sidenav.toggle()"
-            aria-label="Menu">
-      <mat-icon>menu</mat-icon>
-    </button>
-    
-    <p id="homepage-text">
-      Welcome to Text Based Basketball!
-    </p>
+  <button mat-fab color="accent"
+          class="menu-button"
+          (click)="sidenav.toggle()"
+          aria-label="Menu">
+    <mat-icon>menu</mat-icon>
+  </button>
 
-    <div id="button-div">
-      <a mat-raised-button color="accent"
-          class="start-button"
-          routerLink="/player-form"
-          routerLinkActive="active"
-          (click)="closeWelcome()">
-        START Player Creation
-      </a>
-    </div>
+  <p id="homepage-text">
+    Welcome to Text Based Basketball!
+  </p>
 
-    <router-outlet></router-outlet>
+  <div id="button-div">
+    <a mat-raised-button color="accent"
+        class="start-button"
+        routerLink="/player-form"
+        routerLinkActive="active"
+        (click)="closeWelcome()">
+      START Player Creation
+    </a>
+  </div>
+
+  <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
