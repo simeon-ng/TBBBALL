@@ -1,39 +1,39 @@
-<div class="form-div">
+<form class = "form-div"
+      [formGroup] = "playerForm"
+      (ngSubmit) = "onSubmit()">
   <h3>Create your player!</h3>
-  <mat-form-field color="primary"
-                  appearance="outline">
+  <mat-form-field color = "primary"
+                  appearance = "outline">
     <mat-label>First Name</mat-label>
-    <input matInput>
+    <input matInput type = "text" formControlName = "firstName">
   </mat-form-field>
 
   <br>
 
-  <mat-form-field color="primary"
-                  appearance="outline">
+  <mat-form-field color = "primary"
+                  appearance = "outline">
     <mat-label>Last Name</mat-label>
-    <input matInput>
+    <input matInput type = "text" formControlName = "lastName">
   </mat-form-field>
 
   <br>
 
-  <mat-form-field color="primary"
-                  appearance="outline">
-    <mat-label>Height (ft)</mat-label>
-    <input matInput type="number">
-  </mat-form-field>
-  <mat-form-field color="primary"
-                  appearance="outline"
-                  class="inches-input">
-    <mat-label>Height (in)</mat-label>
-    <input matInput type="number">
-  </mat-form-field>
+  <app-player-height-input></app-player-height-input>
 
   <br>
 
   <mat-form-field color="primary"
                   appearance="outline">
     <mat-label>Weight (lbs)</mat-label>
-    <input matInput type="number">
+    <input matInput type = "number" formControlName = "weight">
   </mat-form-field>
+  
+  <br>
 
-</div>
+  <button mat-raised-button
+          color = "accent"
+          type = "submit"
+          [disabled] = "!playerForm.valid">
+    Start Career
+  </button>
+</form>
