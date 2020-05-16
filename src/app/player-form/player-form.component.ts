@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 
-class playerHeight {
-    constructor(public feet: number, public inches: number) {}
-}
-
 @Component({
     selector: 'app-player-form',
     templateUrl: './player-form.component.html',

@@ -1,6 +1,6 @@
-<div>
-    <input class="feet" formControlName="feet" maxlength=1>
-    <span>&quot;</span>
-    <input class="inches" formControlName="inches" maxlength=2>
-    <span>&apos;</span>
+<div [formGroup] = "heightInput" class = "input-container">
+    <input class = "input-element" formControlName = "feet" size = "1">
+    <span class = "input-spacer">&apos;</span>
+    <input class = "input-element" formControlName = "inches" size = "2">
+    <span class = "input-spacer">&quot;</span>
 </div>
